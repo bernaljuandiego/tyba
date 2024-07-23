@@ -25,6 +25,7 @@ const BASE_API = config.API_PATH + config.API_VERSION
 // llamado a rutas
 require('./routes/account.route.js')(app, BASE_API);
 require('./routes/restaurants.route.js')(app, BASE_API);
+require('./routes/logs.route.js')(app, BASE_API);
 
 
 // mensaje de bienvenida

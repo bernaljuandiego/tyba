@@ -34,8 +34,25 @@ const update = async (data,id) => {
     })
 }
 
+const getAll = async () => {
+
+    return new Promise(async (resolve, reject) => {
+    
+        try {
+    
+            const result = await logsModel.findAll({ order: [ ['id', 'DESC']]})
+            resolve(result);
+        
+        }catch (error) {
+            
+            reject(error);
+        }
+    })
+}
+
 module.exports = {
     
     create,
-    update
+    update,
+    getAll
 }
