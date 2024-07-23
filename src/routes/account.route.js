@@ -26,7 +26,8 @@ module.exports = function (app, base_api) {
     app.post(base_api + "/account/authenticate", [
         body('email', ' Ingresa tu correo personal.').not().isEmpty(),
         body('email', 'Debe ser un email válido.').isEmail(),
-        body('password', 'Ingresa una contraseña.').not().isEmpty()],
+        body('password', 'Ingresa una contraseña.').not().isEmpty(),
+        body('password').custom(passwordValido)],
         middleware.validarCampos,
         accountController.getToken);
 
