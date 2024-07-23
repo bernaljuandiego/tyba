@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "c9902fb5-8317-4593-a31e-6a64316c3209",
+		"name": "tyba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4503054"
+	},
+	"item": [
+		{
+			"name": "Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"bernaljuandiego4@hotmail.com\",\r\n    \"password\": \"Con123..\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/api/v1/account/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"bernaljuandiego4@hotmail.com\",\r\n    \"password\": \"Con12.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/api/v1/account/authenticate"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjI0MjQxNjY4LWNlOTMtNDdlZS05YTU4LWRmYjQzZWFiNjQwNiIsImVtYWlsIjoiYmVybmFsanVhbmRpZWdvMzFAaG90bWFpbC5jb20ifSwiaWF0IjoxNzIxNzM4MTQ4LCJleHAiOjE3MjE3NzQxNDh9.LYW-2qn-LhQWWVknio2z9WIVJMocaYzJGYkbYEo0IXs",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3001/api/v1/account/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "Restaurants",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjI0MjQxNjY4LWNlOTMtNDdlZS05YTU4LWRmYjQzZWFiNjQwNiIsImVtYWlsIjoiYmVybmFsanVhbmRpZWdvMzFAaG90bWFpbC5jb20ifSwiaWF0IjoxNzIxNzM4MTQ4LCJleHAiOjE3MjE3NzQxNDh9.LYW-2qn-LhQWWVknio2z9WIVJMocaYzJGYkbYEo0IXs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lat\":\"4.7266645\",\r\n    \"lon\":\"-74.067657\",\r\n    \"range\":\"500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/api/v1/restaurants"
+			},
+			"response": []
+		},
+		{
+			"name": "logs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjI0MjQxNjY4LWNlOTMtNDdlZS05YTU4LWRmYjQzZWFiNjQwNiIsImVtYWlsIjoiYmVybmFsanVhbmRpZWdvMzFAaG90bWFpbC5jb20ifSwiaWF0IjoxNzIxNzM4MTQ4LCJleHAiOjE3MjE3NzQxNDh9.LYW-2qn-LhQWWVknio2z9WIVJMocaYzJGYkbYEo0IXs",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3001/api/v1/logs"
+			},
+			"response": []
+		}
+	]
+}
