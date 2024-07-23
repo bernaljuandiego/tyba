@@ -23,7 +23,6 @@ exports.auth = (req, res, next) => {
                 
     
             })
-            console.log("holaaaa");
             let infoLogs = getInfoLogs();
     
             return await generateResponseFields400("error en alguno de los campos","token no valido",res,infoLogs);
