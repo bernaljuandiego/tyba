@@ -1,5 +1,5 @@
 const database_config = {
-    DB_URL: process.env.DB_URL || 'mysql://root:DmHVGOZSvoaDLicHCgZXtccuMxnlUWFH@monorail.proxy.rlwy.net:38233/railway',
+    DB_URL: process.env.DB_URL || 'mysql://root:WwSiOnCECgyLPaKxffMMgSKncDWzIEWC@monorail.proxy.rlwy.net:15312/railway',
     dialect: 'mysql',
     pool: {
         max: 100,
